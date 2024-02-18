@@ -1,0 +1,157 @@
+.footer {
+	margin: 0 auto;
+	padding: 25px 60px;
+	padding-top: 118px;
+	width: 1600px;
+	background-color: var(--black);
+}
+
+.wrapperMenu {
+	display: flex;
+	justify-content: space-between;
+	gap: 150px;
+}
+
+.aboutTitle, .title {
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.ul {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.link {
+	color: var(--footer-color);
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	transition: 0.7s color;
+}
+
+.link:hover {
+	color: var(--green);
+}
+
+.about {
+	color: var(--footer-color);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 135%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.wrapperContacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 32px;
+	padding-top: 11px;
+	border-top: 1px solid rgb(50, 50, 50);
+}
+
+.wrapperImages {
+	display: flex;
+	gap: 20px;
+}
+
+.circle {
+	width: 59px;
+	height: 59px;
+	border: 2px solid var(--green);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: transparent;
+	transition: 0.7s background-color;
+}
+
+.circle:hover {
+	background-color: var(--green);
+}
+
+.rights, .privacy  {
+	color: var(--footer-color);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+@media screen and (max-width: 1616px) {
+	.footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1309px) {
+	.about {
+		font-size: 14px;
+	}
+	.rights, .privacy {
+		font-size: 12px;
+		text-align: center;
+	}
+	.wrapperMenu {
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.img {
+		width: 157px;
+		height: 94px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer {
+		padding: 10px 10px;
+	}
+	.img {
+		width: 142px;
+		height: 88px;
+	}
+	.wrapperAbout {
+		display: none;
+	}
+	.wrapperMenu {
+		flex-direction: column;
+		align-items: center;
+		justify-content: normal;
+	}
+	.wrapperContacts {
+		display: grid;
+		gap: 15px;
+		justify-items: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+		"wrapperImages"
+		"rights"
+		"privacy";
+	}
+	.circle {
+		width: 37px;
+		height: 37px;
+	}
+	.contactsImg {
+		width: 16px;
+		height: 16px;
+	}
+	.wrapperImages {
+		grid-area: wrapperImages;
+	}
+	.rights, .privacy {
+		grid-area: rights;
+	}
+	.privacy {
+		grid-area: privacy;
+	}
+}

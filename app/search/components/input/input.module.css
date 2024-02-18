@@ -1,0 +1,29 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+}
+
+.input {
+	box-sizing: border-box;
+	border: 2px solid rgb(37, 42, 44);
+	border-radius: 93px;
+	background: rgb(27, 30, 30);
+	padding: 20px;
+	color: var(--white);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 21px;
+	width: 500px;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.img {
+	transform: translate(-50px);
+	cursor: pointer;
+}

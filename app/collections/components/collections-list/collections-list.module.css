@@ -1,0 +1,19 @@
+.collectionsList {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(428px, 1fr));
+}
+
+@media screen and (max-width: 1403px) {
+	.collectionsList {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.collectionsList {
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+		gap: 20px;
+	}
+
+}

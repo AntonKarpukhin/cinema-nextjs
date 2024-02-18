@@ -1,0 +1,13 @@
+.mainFilmsContainer {
+	width: 100%;
+	padding-top: 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+@media screen and (max-width: 767px) {
+	.mainFilmsContainer {
+		padding-top: 20px;
+	}
+}
