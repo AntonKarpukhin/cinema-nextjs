@@ -44,12 +44,13 @@ const FilmListCollection = ({alias}: FilmListCollectionProps) => {
 	};
 
 	return (
-		<div className={styles.filmListCollection}>
-			<div className={ styles.wrapper }>
-				{ films.map( film => <SmallFilm key={ film.id } film={ film } alias={alias}/> ) }
-			</div>
-			<button onClick={() => setCounter(counter => counter + 1)} className={styles.button}>Показать ещё</button>
-		</div>
+		<div className={ styles.filmListCollection }>
+            <div className={ styles.wrapper }>
+				{ films.map( film => <SmallFilm key={ film.id } film={ film } alias={ alias }/> ) }
+            </div>
+            <button onClick={ () => setCounter( counter => counter + 1 ) } className={ styles.button }>Показать ещё
+            </button>
+        </div>
 	)
 }
 

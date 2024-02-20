@@ -36,13 +36,13 @@ const Footer = () => {
 			<div className={styles.wrapperContacts}>
 				<p className={styles.rights}>©Все права защищены Anton Karpukhin 2024</p>
 				<div className={styles.wrapperImages}>
-					<Link className={styles.circle} href={''}>
+					<Link className={styles.circle} href={'https://t.me/LembrarB'} target={'_blank'}>
 						<Image className={styles.contactsImg} src="/telegram.svg" alt="Телеграм" width={31} height={31}></Image>
 					</Link>
-					<Link className={styles.circle} href={''}>
+					<Link className={styles.circle} href={'https://github.com/AntonKarpukhin/cinema-nextjs'} target={'_blank'}>
 						<Image className={styles.contactsImg} src="/git.svg" alt="Гитхаб" width={31} height={31}></Image>
 					</Link>
-					<Link className={styles.circle} href={''}>
+					<Link className={styles.circle} href={'mailto:a.karpukhin21@mail.ru'} target={'_blank'}>
 						<Image className={styles.contactsImg} src="/mail.svg" alt="Почта" width={31} height={31}></Image>
 					</Link>
 				</div>
